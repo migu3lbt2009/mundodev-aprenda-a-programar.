@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MundoDev - Aprenda, Pratique e Transforme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <h1 class="logo">Mundo<span>Dev</span></h1>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Início</a></li>
+    <li><a href="#about" class="nav-link"><i class="fas fa-users"></i> Quem Somos</a></li>
+    <li><a href="#courses" class="nav-link"><i class="fas fa-book"></i> Cursos & Conteúdos</a></li>
+    <li><a href="#challenges" class="nav-link"><i class="fas fa-trophy"></i> Desafios</a></li>
+    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+</ul>
+
+
+        </nav>
+        <button class="nav-toggle" aria-label="Abrir menu" id="nav-toggle">&#9776;</button>
+    </div>
+</header>
+
+<section id="home" class="hero-section">
+    <div class="container hero-container">
+        <!-- Você pode substituir o src da imagem pela que gerar com o prompt -->
+        <img src="hero-image.jpg" alt="MundoDev - Educação em programação" class="hero-image" />
+        <h2>Aprenda Programação e Tecnologia.<br />Construa seu Futuro Digital.</h2>
+        <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary">Começar Agora</a>
+            <a href="#contact" class="btn btn-secondary">Quero Me Inscrever</a>
+            <div class="banner"></div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>Quem Somos</h2>
+        <p>
+            Somos um projeto social que oferece cursos, oficinas e conteúdos gratuitos sobre programação, inclusão digital e desenvolvimento tecnológico para todas as idades e níveis. Nosso objetivo é democratizar o acesso à tecnologia, preparar jovens, mulheres e comunidade para o futuro digital.
+        </p>
+    </div>
+</section>
+
+<section id="courses" class="courses-section">
+    <div class="container">
+        <h2>Cursos & Conteúdos</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Fundamentos de Programação</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Desenvolvimento Web Básico</li>
+                    <li>Lógica de Programação</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Desenvolvimento de Apps</h3>
+                <ul>
+                    <li>Apps para celular</li>
+                    <li>Introdução a React Native</li>
+                    <li>Publicação em lojas digitais</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Linguagens de Programação</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Banco de Dados</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Inclusão Digital</h3>
+                <ul>
+                    <li>Tecnologia acessível</li>
+                    <li>Reciclagem de hardware</li>
+                    <li>Empoderamento digital</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="challenges" class="challenges-section">
+    <div class="container">
+        <h2>Desafios MundoDev</h2>
+        <p class="challenge-intro">Desafios práticos para fixar o aprendizado e desenvolver projetos reais.</p>
+        <div class="challenge-list">
+            <div class="challenge-card">
+                <h3>Página Web Responsiva</h3>
+                <p>Crie uma página que funcione bem em celulares, tablets e desktops.</p>
+                <a href="#" class="btn-outline">Ver Detalhes</a>
+            </div>
+            <div class="challenge-card">
+                <h3>App Simples para Celular</h3>
+                <p>Desenvolva um aplicativo básico usando React Native ou outra tecnologia.</p>
+                <a href="#" class="btn-outline">Ver Detalhes</a>
+            </div>
+            <div class="challenge-card">
+                <h3>Problemas Lógicos</h3>
+                <p>Resolva exercícios de lógica para fortalecer seu raciocínio de programação.</p>
+                <a href="#" class="btn-outline">Ver Detalhes</a>
+            </div>
+            <div class="challenge-card">
+                <h3>Projeto Social Tech</h3>
+                <p>Crie uma solução tecnológica para ajudar a comunidade ao seu redor.</p>
+                <a href="#" class="btn-outline">Ver Detalhes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Selecione</option>
+                    <option value="info">Informações</option>
+                    <option value="inscricao">Inscrição</option>
+                    <option value="sugestao">Sugestões</option>
+                    <option value="duvida">Dúvidas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
+        </form>
+
+<a class="instagram-link"
+   href="https://www.instagram.com/mundodev2025"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram Mundo Dev 2025">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 3a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+  </svg>
+  @mundodev2025
+</a>
+
+
+<div id="devbot-container">
+  <h3>🤖 DevBot - Sua IA do Mundo Dev</h3>
+  <form>
+    <input type="text" placeholder="Digite sua mensagem" />
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p>MundoDev © 2025 — Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script>
+    // Toggle menu mobile
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('nav');
+    navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+    });
+
+    // Simple form validation and alert
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Mensagem enviada! Obrigado pelo contato.');
+        form.reset();
+    });
+
+    // Set active nav link on click
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            if(nav.classList.contains('nav-open')) {
+                nav.classList.remove('nav-open');
+            }
+        });
+    });
+</script>
+html {
+  scroll-behavior: smooth;
+}
+
+</body>
+</html>

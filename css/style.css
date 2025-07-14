@@ -1,0 +1,478 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    user-select: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: #1f1f1f;
+    padding: 15px 0;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff;
+    user-select: none;
+}
+
+.logo span {
+    color: #8a2be2;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 25px;
+}
+
+.nav-link {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00d8ff;
+}
+
+/* Mobile Nav Toggle */
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #00d8ff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url(../css/assets/fotos/Whisk_4c832a9ce3.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+    position: relative;
+}
+
+.hero-image {
+    max-width: 400px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.hero-container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00d8ff;
+    color: #121212;
+}
+
+.btn-primary:hover {
+    background-color: #00b0d8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    user-select: text;
+    background: none; /* imagem removida daqui */
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #00d8ff;
+    font-weight: 700;
+}
+
+/* About Section */
+.about-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Courses Section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #222;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #8a2be2;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: inside disc;
+    color: #ddd;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* Challenges Section */
+.challenge-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #bbb;
+}
+
+.challenge-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+}
+
+.challenge-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 216, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+
+.challenge-card:hover {
+    box-shadow: 0 6px 25px rgba(0, 216, 255, 0.6);
+}
+
+.challenge-card h3 {
+    color: #00d8ff;
+    margin-bottom: 15px;
+}
+
+.challenge-card p {
+    flex-grow: 1;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.btn-outline {
+    border: 2px solid #00d8ff;
+    background: transparent;
+    color: #00d8ff;
+    padding: 10px 16px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    background-color: #00d8ff;
+    color: #121212;
+}
+
+/* Contact Section */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(138, 43, 226, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bbb;
+    font-weight: 600;
+}
+
+/* Botão flutuante */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffe600;
+  color: black;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  z-index: 999;
+}
+
+/* Janela do Chat */
+#chat-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 998;
+  max-height: 400px;
+}
+
+.chat-hidden {
+  display: none;
+}
+
+#chat-header {
+  background-color: #ffe600;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #121212;
+}
+
+.bot-msg, .user-msg {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 90%;
+}
+
+.bot-msg {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.user-msg {
+  background-color: #ffe600;
+  color: black;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+#chat-form {
+  display: flex;
+  border-top: 1px solid #333;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#chat-form button {
+  background-color: #ffe600;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Container do DevBot */
+#devbot-container {
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  background: #1e1e2f;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00cfff66;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Ícone e título */
+#devbot-container h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Input de texto */
+#devbot-container input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 5px #00cfffaa;
+  background-color: #121224;
+  color: #eee;
+  transition: box-shadow 0.3s ease;
+}
+
+#devbot-container input[type="text"]:focus {
+  box-shadow: 0 0 8px #00e5ff;
+}
+
+/* Botão enviar */
+#devbot-container button {
+  width: 70px;
+  padding: 8px;
+  margin-left: 8px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #00cfff, #0066ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #00cfffaa;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#devbot-container button:hover {
+  background: linear-gradient(135deg, #0066ff, #00cfff);
+  box-shadow: 0 6px 12px #00e5ffcc;
+}
+.nav-list i {
+  font-size: 1rem; /* tamanho equilibrado */
+  margin-right: 6px;
+  color: #00d8ff;
+  vertical-align: middle;
+}
+
+
+/* Ajustar tamanho dos ícones nos títulos */
+h2 i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #00bfff;
+  background: #1f1f1f;
+  border: 2px solid #00bfff;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  gap: 8px;
+  margin-top: 15px;
+  transition: background 0.3s, color 0.3s;
+}
+.instagram-link:hover {
+  background: #00bfff;
+  color: #1f1f1f;
+}
+.instagram-link svg {
+  width: 16px;  /* tamanho menor do ícone */
+  height: 16px;
+  fill: currentColor;
+}
+html {
+  scroll-behavior: smooth;
+}
